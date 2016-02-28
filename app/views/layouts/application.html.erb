@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title> This is rails </title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
+<body>
+sdfsfdsdf
+<ol class="nav">
+  <% get_header_items().each  do |item| %>
+        <li>
+          <%= link_to item[:name], item[:link] %>
+        </li>
+  <% end %>
+</ol>
+
+<%= yield %>
+
+</body>
+</html>
