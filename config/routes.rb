@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
-  get 'cats/:numberOfCats' => 'cats#index'
+  get 'user/save_user'
+  post 'user/save_user'
+
+  get 'user/view_user'
 
   get 'cats' => 'cats#index'
+  get 'cats/:number_of_cats' => 'cats#index'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

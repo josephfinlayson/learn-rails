@@ -16,6 +16,10 @@ module ApplicationHelper
      {
          name: "hobbies",
          link: hobbys_path
+     },
+     {
+         name: "cats",
+         link: cats_path
      }
     ]
 

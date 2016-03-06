@@ -1,8 +1,12 @@
-<h1>Cats#index</h1>
-<p>
-  <%= while (@cats != 0) do %>
+<h1>This many cats: <%= @cats_in_html %> </h1>
+
+<div>
+  <%= while (@cats_in_html != 0) do %>
       <img src='http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg'/>
-  <% @cats = @cats-1
+      <h1>cat number: <%= @cats_in_html %></h1>
+  <% @cats_in_html = @cats_in_html - 1
      end %>
 
-</p>
+</div>
+
+<h1>  <%= @warning %> </h1>
